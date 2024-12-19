@@ -1,5 +1,5 @@
-import numpy as np
-import matplotlib.pyplot as plt
+import numpy as np    #This is used for calculations
+import matplotlib.pyplot as plt    #This is to plot graphs
 
 # Define parameters
 amplitude = 1      # Amplitude of the sine wave
