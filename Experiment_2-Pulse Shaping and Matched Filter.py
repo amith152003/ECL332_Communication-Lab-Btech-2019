@@ -1,6 +1,6 @@
-import numpy as np
-import matplotlib.pyplot as plt
-from scipy.signal import correlate
+import numpy as np    #To create arrays and other operation 
+import matplotlib.pyplot as plt    #To plot the required arrays
+from scipy.signal import correlate    #The correlation function
 
 # Set parameters
 N = 10          # Number of bits to transmit
