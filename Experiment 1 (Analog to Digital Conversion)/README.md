@@ -105,6 +105,8 @@ for i in range(len(n)):
 ```
 Calculates gamma values empirically based on bit-depth.
 
+---
+
 ## Visualization
 Subplots
 
