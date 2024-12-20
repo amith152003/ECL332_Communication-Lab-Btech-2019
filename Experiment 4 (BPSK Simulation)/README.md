@@ -78,6 +78,8 @@ BER_theory = 0.5 * erfc(np.sqrt(10**(EbNo_db_Range / 10)))
 ```
     Uses the complementary error function for theoretical BER computation.
 
+---
+
 ## Visualization
 #### BER vs SNR
 ```python
