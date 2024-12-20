@@ -92,6 +92,8 @@ UP_s = upfirdn(rct_filt, data, up=10)
     Upsampling: Increases the resolution of the signal.
     Filtering: Applies the raised cosine filter to smooth transitions.
 
+---
+
 ## Visualization
 #### Baseband Signal
 ```python
