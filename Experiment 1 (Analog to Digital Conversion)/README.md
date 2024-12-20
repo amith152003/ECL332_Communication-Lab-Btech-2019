@@ -35,8 +35,8 @@ This project uses Python libraries like `numpy` and `matplotlib` to:
 import numpy as np
 import matplotlib.pyplot as plt
 ```
-numpy: For numerical calculations and signal generation.
-matplotlib: For plotting graphs.
+    numpy: For numerical calculations and signal generation.
+    matplotlib: For plotting graphs.
 
 ### 2. Define Parameters
 ```python
@@ -44,17 +44,17 @@ amplitude = 1
 fm = 100
 t = np.arange(0, 0.05, 0.0005)
 ```
-Amplitude: Peak value of the sine wave.
-Frequency (fm): Cycles per second (in Hz).
-Time vector (t): Defines the signal's time range and resolution.
+    Amplitude: Peak value of the sine wave.
+    Frequency (fm): Cycles per second (in Hz).
+    Time vector (t): Defines the signal's time range and resolution.
 
 ### 3. Generate the Sine Wave
 ```python
 x = np.sin(2*np.pi*fm*t)
 x_offset = x + 1
 ```
-x: Original sine wave.
-x_offset: Sine wave shifted upwards by 1 unit.
+    x: Original sine wave.
+    x_offset: Sine wave shifted upwards by 1 unit.
 
 ### 4. Sample the Sine Wave
 ```python
@@ -63,8 +63,8 @@ Ts = 1/fs
 T = np.arange(0, 0.05, Ts)
 x_s = np.sin(2*np.pi*fm*T)
 ```
-Sampling Frequency (fs): Frequency at which the signal is sampled.
-Sampled Signal (x_s): Discrete representation of the sine wave.
+    Sampling Frequency (fs): Frequency at which the signal is sampled.
+    Sampled Signal (x_s): Discrete representation of the sine wave.
 
 ### 5. Quantization
 Define Quantization Levels
@@ -76,8 +76,8 @@ x_min = round(min(x))
 delta = (x_max - x_min)/2
 Q_level = np.linspace(x_min, x_max, L+1)
 ```
-Quantization Levels (L): Determined by the number of bits (n).
-Quantization Steps (delta): Step size between levels.
+    Quantization Levels (L): Determined by the number of bits (n).
+    Quantization Steps (delta): Step size between levels.
 
 Quantize the Signal
 ```python
@@ -88,13 +88,13 @@ for i in x_s:
             x_q_1.append(j)
             break
 ```
-Assigns each sampled value to the nearest quantization level.
+    Assigns each sampled value to the nearest quantization level.
 
 ### 6. Calculate Quantization Error
 ```python
 e_q = x_q_1 - x_s
 ```
-Quantization Error (e_q): Difference between the quantized and original signal.
+    Quantization Error (e_q): Difference between the quantized and original signal.
 
 ### 7. Gamma Calculation
 ```python
