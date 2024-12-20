@@ -23,7 +23,7 @@ This repository is designed for students to explore different communication tech
 
 - **Analog to Digital Conversion**: Understanding sine wave generation, offset addition, sampling, quantization, and calculating Signal-to-Noise Ratio (SNR).
 - **Baseband Modulation**: Pulse shaping, filtering, and matched filter response.
-- **Modulation Techniques**: BPSK and QPSK modulation and demodulation.
+- **Modulation Techniques**: BPSK and QPSK.
 - **Error Rate Analysis**: Bit Error Rate (BER) vs Signal-to-Noise Ratio (SNR) for BPSK and QPSK.
 - **Constellation Diagrams**: Visualization of modulation schemes.
 - **Eye Diagrams**: Analyzing the effect of inter-symbol interference (ISI) and noise.
@@ -102,7 +102,6 @@ Outputs include theoretical and simulated BER vs SNR graphs and BPSK constellati
 
 This module explores Quadrature Phase Shift Keying (QPSK) modulation. Key features include:
 
-- **Modulation and Demodulation**: Implementing QPSK transmission and reception in AWGN.
 - **BER Analysis**: Simulating and comparing BER with theoretical values for varying Eb/No.
 - **Constellation Diagram**: Visualizing QPSK symbol placement in the I-Q plane.
 
