@@ -128,8 +128,8 @@ plt.stem(T, x_s)
 
 Quantized Signal
 ```python
-    plt.subplot(2,2,4)
-    plt.step(t_1, x_q)
+plt.subplot(2,2,4)
+plt.step(t_1, x_q)
 ```
 
 Gamma vs Bit-Depth Plot
