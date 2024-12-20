@@ -90,6 +90,8 @@ corr = correlate(x_noise, np.ones(100), mode="same") / 100
 ```
     Matched Filter Output (corr): Correlates the noisy signal with a rectangular pulse to recover the transmitted message.
 
+---
+
 ## Visualization
 Subplots
 
