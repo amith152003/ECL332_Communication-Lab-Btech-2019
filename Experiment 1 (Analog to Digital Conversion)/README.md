@@ -1,4 +1,4 @@
-# Analog to Digital Conversion
+# Analog to Digital Signal Conversion
 
 This project demonstrates various signal processing steps, including generating a sine wave, sampling it, quantizing it, and analyzing quantization errors and gamma values. 
 
@@ -108,37 +108,37 @@ Calculates gamma values empirically based on bit-depth.
 ## Visualization
 Subplots
 
-Original Sine Wave
+#### Original Sine Wave
 ```python
 plt.subplot(2,2,1)
 plt.plot(t, x)
 ```
 
-Offset Sine Wave
+#### Offset Sine Wave
 ```python
 plt.subplot(2,2,2)
 plt.plot(t, x_offset)
 ```
 
-Sampled Sine Wave
+#### Sampled Sine Wave
 ```python
 plt.subplot(2,2,3)
 plt.stem(T, x_s)
 ```
 
-Quantized Signal
+#### Quantized Signal
 ```python
 plt.subplot(2,2,4)
 plt.step(t_1, x_q)
 ```
 
-Gamma vs Bit-Depth Plot
+#### Gamma vs Bit-Depth Plot
 ```python
 plt.figure()
 plt.plot(n, gamma)
 ```
 
-Show Plots
+#### Show Plots
 ```python
 plt.show()
 ```
