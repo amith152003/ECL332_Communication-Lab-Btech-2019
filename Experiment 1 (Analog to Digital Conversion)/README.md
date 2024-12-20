@@ -1,4 +1,4 @@
-# Signal Processing and Visualization in Python
+# Analog to Digital Conversion
 
 This project demonstrates various signal processing steps, including generating a sine wave, sampling it, quantizing it, and analyzing quantization errors and gamma values. 
 
