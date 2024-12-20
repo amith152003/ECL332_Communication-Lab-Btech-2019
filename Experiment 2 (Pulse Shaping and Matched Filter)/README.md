@@ -91,44 +91,44 @@ corr = correlate(x_noise, np.ones(100), mode="same") / 100
     Matched Filter Output (corr): Correlates the noisy signal with a rectangular pulse to recover the transmitted message.
 
 ## Visualization
-#### Subplots
+Subplots
 
-Original Transmitted Signal
+#### Original Transmitted Signal
 ```python
 plt.figure()
 plt.plot(x, '.-')
 plt.title("Message")
 ```
 
-Raised Cosine Filter
+#### Raised Cosine Filter
 ```python
 plt.figure()
 plt.plot(t, h, '.')
 plt.title("Raised Cosine")
 ```
 
-Pulse Shaped Signal
+#### Pulse Shaped Signal
 ```python
 plt.figure()
 plt.plot(x_shaped)
 plt.title("Pulse Shaping")
 ```
 
-Noisy Signal
+#### Noisy Signal
 ```python
 plt.figure()
 plt.plot(x_noise)
 plt.title("Added Noise Signal")
 ```
 
-Matched Filter Output
+#### Matched Filter Output
 ```python
     plt.figure()
     plt.plot(corr)
     plt.title("Matched Filter")
 ```
 
-Show All Plots
+#### Show All Plots
 ```python
 plt.show()
 ```
